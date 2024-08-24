@@ -2,7 +2,7 @@
 FROM php:8.2-apache
 
 # Copia los archivos del proyecto al contenedor
-COPY / /var/www/html/
+COPY /public /var/www/html/
 
 # Ajusta permisos para Apache
 RUN chown -R www-data:www-data /var/www/html
